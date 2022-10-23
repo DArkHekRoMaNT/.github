@@ -1,0 +1,79 @@
+name: Bug Report
+description: Bug report for VS mod
+labels: [ "bug" ]
+body:  
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod Version
+      description: What version of the mod are you using?
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Version
+      description: What version of Vintage Story are you using?
+      placeholder: 1.17.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: What platforms are you using?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: true
+  - type: dropdown
+    id: playmode
+    attributes:
+      label: Play mode
+      description: Are you playing solo or on a server?
+      multiple: true
+      options:
+        - Singleplayer
+        - Multiplayer
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: Problem
+      description: What is wrong and expected behavior?
+      placeholder: Describe the problem here...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Please add any relevant log. This will be automatically formatted into code, so no need for backticks.
+      placeholder: |
+        1. General useful info is in `client-main.txt` and `server-main.txt` (in singleplayer too)
+        2. All client crashes can be found in `client-crash.txt`
+        3. Logs are in %AppData%/VintagestoryData/Logs
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: mods
+    attributes:
+      label: Mods
+      description: Add a list of other mods here. Not needed if you have attached the main log. You can also attach it in the screenshots section
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Drag and drop pictures here.
+    validations:
+      required: false
