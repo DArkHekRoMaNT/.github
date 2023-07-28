@@ -11,11 +11,19 @@ body:
     validations:
       required: true
   - type: input
+    id: cl-version
+    attributes:
+      label: Mod Version
+      description: What version of CommonLib are you using? (most of my mods use (CommonLib)[https://mods.vintagestory.at/commonlib] to work)
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: input
     id: game-version
     attributes:
       label: Game Version
-      description: What version of Vintage Story are you using?
-      placeholder: 1.17.0
+      description: What version of Vintage Story are you using? (specify stable or net7 build)
+      placeholder: 1.18.0 (stable)
     validations:
       required: true
   - type: dropdown
