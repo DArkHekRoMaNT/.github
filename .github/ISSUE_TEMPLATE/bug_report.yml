@@ -13,7 +13,7 @@ body:
   - type: input
     id: cl-version
     attributes:
-      label: Mod Version
+      label: CommonLib Version
       description: What version of CommonLib are you using? (most of my mods use [CommonLib](https://mods.vintagestory.at/commonlib) to work)
       placeholder: 1.0.0
     validations:
