@@ -6,7 +6,8 @@ body:
     attributes:
       placeholder: Describe your sugestion here...
     validations:
-      required: true  - type: textarea
+      required: true 
+   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
