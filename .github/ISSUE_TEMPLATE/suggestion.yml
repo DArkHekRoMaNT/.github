@@ -2,16 +2,18 @@ name: Suggestion
 description: Suggestion for VS mod
 labels: [ "enhancement" ]
 body:  
-   - type: textarea
+  - type: textarea
+    id: desc
     attributes:
-      placeholder: Describe your sugestion here...
+      label: 
+      placeholder: Describe your suggestion here...
     validations:
-      required: true 
-   - type: textarea
+      required: true
+  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
-      description: If applicable, you can add screenshots.
+      description: If applicable, add screenshots.
       placeholder: Drag and drop pictures here.
     validations:
       required: false
